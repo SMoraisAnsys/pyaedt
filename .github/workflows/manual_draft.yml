@@ -6,7 +6,6 @@ on:
 jobs:
 
   test-job-0:
-    if: github.event.pull_request.draft == true
     runs-on: ubuntu-latest
     steps:
       - name: Tests step
