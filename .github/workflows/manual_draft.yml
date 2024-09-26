@@ -7,28 +7,28 @@ on:
     inputs:
       test-solvers-windows:
         description: "Testing solvers and coverage (Windows)"
-        required: true
         defaut: 'no'
+        type: choice
         options:
           - 'yes'
           - 'no'
       test-solvers-linux:
         description: "Testing solvers and coverage (Linux)"
-        required: true
         defaut: 'no'
+        type: choice
         options:
           - 'yes'
           - 'no'
       test-windows:
         description: "Testing solvers and coverage (Windows)"
-        required: true
         defaut: 'no'
+        type: choice
         options:
           - 'yes'
           - 'no'
       test-linux:
         description: "Testing solvers and coverage (Linux)"
-        required: true
+        type: choice
         defaut: 'no'
         options:
           - 'yes'
