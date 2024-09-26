@@ -43,7 +43,6 @@ jobs:
   test-solvers-windows:
     name: Testing solvers and coverage (Windows)
     if: github.event.inputs.test-solvers-windows == 'yes'
-    needs: [smoke-tests]
     runs-on: [ self-hosted, Windows, pyaedt ]
     steps:
       - name: Install Git and checkout project
@@ -104,7 +103,6 @@ jobs:
   test-solvers-linux:
     name: Testing solvers and coverage (Linux)
     if: github.event.inputs.test-solvers-linux == 'yes'
-    needs: [smoke-tests]
     runs-on: [ self-hosted, Linux, pyaedt ]
     env:
       ANSYSEM_ROOT242: '/opt/AnsysEM/v242/Linux64'
@@ -161,7 +159,6 @@ jobs:
   test-windows:
     name: Testing and coverage (Windows)
     if: github.event.inputs.test-windows == 'yes'
-    needs: [smoke-tests]
     runs-on: [ self-hosted, Windows, pyaedt ]
     steps:
       - name: Install Git and checkout project
@@ -227,7 +224,6 @@ jobs:
   test-linux:
     name: Testing and coverage (Linux)
     if: github.event.inputs.test-linux == 'yes'
-    needs: [smoke-tests]
     runs-on: [ self-hosted, Linux, pyaedt ]
     env:
       ANSYSEM_ROOT242: '/opt/AnsysEM/v242/Linux64'
