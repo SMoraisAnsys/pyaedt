@@ -12,7 +12,7 @@ requires-python = ">=3.8,<4"
 
 dependencies = [
     "ansys-sphinx-theme==1.4.0",
-    "matplotlib>=2.5,<3.9",
+    "matplotlib>=2.5,<3.10",
 ]
 
 [tool.setuptools.dynamic]
