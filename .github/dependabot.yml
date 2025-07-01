@@ -4,9 +4,5 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-    cooldown:
-      default-days: 7
-      include:
-        - "*"  # Include all dependencies in cooldown
     commit-message:
       prefix: "BUILD(pip)"
