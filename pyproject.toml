@@ -8,7 +8,7 @@ name = "pyaedt"
 dynamic = ["version"]
 description = "High-level Python API for Ansys Electronics Desktop Framework"
 readme = "README.md"
-requires-python = ">=3.9,<4"
+requires-python = ">=3.8,<4"
 
 dependencies = [
     "ansys-sphinx-theme==1.4.0",
