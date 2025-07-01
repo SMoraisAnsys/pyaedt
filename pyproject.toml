@@ -1,32 +1,5 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
-
 [project]
-name = "pyaedt"
-dynamic = ["version"]
-description = "High-level Python API for Ansys Electronics Desktop Framework"
-readme = "README.md"
-requires-python = ">=3.8,<4"
-license = "MIT"
-license-files = ["LICENSE"]
-authors = [{name = "ANSYS, Inc.", email = "pyansys.core@ansys.com"}]
-maintainers = [{name = "ANSYS, Inc.", email = "pyansys.core@ansys.com"}]
-classifiers = [
-    # General classifiers
-    "Development Status :: 4 - Beta",
-    "Intended Audience :: Developers",
-    "Intended Audience :: Science/Research",
-    "Intended Audience :: Manufacturing",
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13",
-]
+name = "DummyRepo"
 
 dependencies = [
     "tomli; python_version < '3.11'",
@@ -38,14 +11,3 @@ doc = [
     "ansys-sphinx-theme>=1.0.0,<1.5",
     "numpydoc>=1.5.0,<1.8",
 ]
-
-[tool.setuptools.dynamic]
-version = {attr = "ansys.aedt.core.__version__"}
-
-[project.urls]
-Bugs = "https://github.com/ansys/pyaedt/issues"
-Documentation = "https://aedt.docs.pyansys.com"
-Source = "https://github.com/ansys/pyaedt"
-Discussions = "https://github.com/ansys/pyaedt/discussions"
-Releases = "https://github.com/ansys/pyaedt/releases"
-Changelog = "https://github.com/ansys/pyaedt/blob/main/doc/source/changelog.rst"
