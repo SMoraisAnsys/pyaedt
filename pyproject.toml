@@ -11,7 +11,7 @@ readme = "README.md"
 requires-python = ">=3.10,<4"
 
 dependencies = [
-    "ansys-sphinx-theme==1.4.0",
+    "ansys-sphinx-theme==1.5.2",
 ]
 
 [tool.setuptools.dynamic]
