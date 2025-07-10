@@ -1,8 +1,17 @@
 version: 2
 updates:
-  - package-ecosystem: "pip" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "pip"
+    directory: "/"
     schedule:
       interval: "daily"
+    labels:
+      - "dependencies:pyproject"
     commit-message:
-      prefix: "BUILD(pip)"
+      prefix: "build"
+    groups:
+      tests:
+        patterns:
+          - "pytest*"
+      doc:
+        patterns:
+          - "*sphinx*"

@@ -2,7 +2,6 @@
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
-
 [project]
 name = "pyaedt"
 dynamic = ["version"]
@@ -10,9 +9,16 @@ description = "High-level Python API for Ansys Electronics Desktop Framework"
 readme = "README.md"
 requires-python = ">=3.8,<4"
 
-dependencies = [
-    "ansys-sphinx-theme==1.4.0",
-    "matplotlib>=2.5,<3.9",
+dependencies = []
+
+[dependency-groups]
+tests = [
+    "pytest==8.0.0", # latest is 8.4.1
+    "pytest-cov==6.0.0", # latest is 6.2.1
+]
+doc = [
+    "ansys-sphinx-theme==1.4.0", # latest is 1.5.3
+    "sphinx==7.4.0", # latest is 8.2.3
 ]
 
 [tool.setuptools.dynamic]
