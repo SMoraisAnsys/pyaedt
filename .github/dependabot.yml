@@ -8,10 +8,3 @@ updates:
       - "dependencies:pyproject"
     commit-message:
       prefix: "build"
-    groups:
-      tests:
-        patterns:
-          - "pytest*"
-      doc:
-        patterns:
-          - "*sphinx*"
