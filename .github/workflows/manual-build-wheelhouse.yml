@@ -35,7 +35,7 @@ on:
          options:
            - 'all'
            - '3.10'
-           - '3.11.15'
+           - '3.11'
            - '3.12'
            - '3.13'
 
@@ -218,7 +218,7 @@ jobs:
 
       - name: Build wheelhouse and perform smoke test
         id: build-wheelhouse-rocky
-        uses: ansys/actions/build-wheelhouse@feat/install-python-with-uv
+        uses: ansys/actions/build-wheelhouse@22d03f365874cc55ffb84705f5f635f055b6f2b8 # v10.2.8
         with:
           checkout: false
           library-name: ${{ env.PACKAGE_NAME }}
@@ -267,7 +267,7 @@ jobs:
 
       - name: Build wheelhouse and perform smoke test
         id: build-wheelhouse-rocky
-        uses: ansys/actions/build-wheelhouse@feat/install-python-with-uv
+        uses: ansys/actions/build-wheelhouse@22d03f365874cc55ffb84705f5f635f055b6f2b8 # v10.2.8
         with:
           checkout: false
           library-name: ${{ env.PACKAGE_NAME }}
