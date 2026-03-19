@@ -1,4 +1,4 @@
-name: Draft workflow
+name: Manual Build Wheelhouse
 
 on:
   workflow_dispatch:
