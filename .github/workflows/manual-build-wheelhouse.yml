@@ -54,7 +54,7 @@ jobs:
 
   build-wheelhouse-ubuntu-all:
     if: github.event.inputs.build-ubuntu-wheels == 'yes' && github.event.inputs.python-version == 'all'
-    name: Build wheelhouse (Ubuntu) - all python versions
+    name: Build wheelhouse (Ubuntu, all)
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -89,7 +89,7 @@ jobs:
 
   build-wheelhouse-ubuntu-single:
     if: github.event.inputs.build-ubuntu-wheels == 'yes' && github.event.inputs.python-version != 'all'
-    name: Build wheelhouse (Ubuntu) - single python version
+    name: Build wheelhouse (Ubuntu, single)
     runs-on: ubuntu-latest
     steps:
       - name: Clone PyAEDT using specified input branch
@@ -120,7 +120,7 @@ jobs:
 
   build-wheelhouse-windows-all:
     if: github.event.inputs.build-windows-wheels == 'yes' && github.event.inputs.python-version == 'all'
-    name: Build wheelhouse (Windows) - all python versions
+    name: Build wheelhouse (Windows, all)
     runs-on: windows-latest
     strategy:
       fail-fast: false
@@ -155,7 +155,7 @@ jobs:
 
   build-wheelhouse-windows-single:
     if: github.event.inputs.build-windows-wheels == 'yes' && github.event.inputs.python-version != 'all'
-    name: Build wheelhouse (Windows) - single python version
+    name: Build wheelhouse (Windows, single)
     runs-on: windows-latest
     steps:
       - name: Clone PyAEDT using specified input branch
@@ -186,7 +186,7 @@ jobs:
 
   build-wheelhouse-rocky-all:
     if: github.event.inputs.build-rocky-wheels == 'yes' && github.event.inputs.python-version == 'all'
-    name: Build wheelhouse (Rocky Linux) - all python versions
+    name: Build wheelhouse (Rocky Linux, all)
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -238,7 +238,7 @@ jobs:
 
   build-wheelhouse-rocky-single:
     if: github.event.inputs.build-rocky-wheels == 'yes' && github.event.inputs.python-version != 'all'
-    name: Build wheelhouse (Rocky Linux) - single python version
+    name: Build wheelhouse (Rocky Linux, single)
     runs-on: ubuntu-latest
     container:
       image: rockylinux/rockylinux:8@sha256:f5529992e67440c1a4ae7788244d4381c6909159a88eacd95b7523ae47ced82e
