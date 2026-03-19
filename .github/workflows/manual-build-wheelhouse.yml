@@ -59,7 +59,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ${{ fromJson(inputs.python-version == 'all' && '["3.10","3.11","3.12","3.13"]' || '["' + inputs.python-version + '"]') }}
+        python-version: ${{ (inputs.python-version == 'all') && ['3.10','3.11','3.12','3.13'] || [inputs.python-version] }}
     steps:
       - name: Clone PyAEDT using specified input branch
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -94,7 +94,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ${{ fromJson(inputs.python-version == 'all' && '["3.10","3.11","3.12","3.13"]' || '["' + inputs.python-version + '"]') }}
+        python-version: ${{ (inputs.python-version == 'all') && ['3.10','3.11','3.12','3.13'] || [inputs.python-version] }}
     steps:
       - name: Clone PyAEDT using specified input branch
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -129,7 +129,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ${{ fromJson(inputs.python-version == 'all' && '["3.10","3.11","3.12","3.13"]' || '["' + inputs.python-version + '"]') }}
+        python-version: ${{ (inputs.python-version == 'all') && ['3.10','3.11','3.12','3.13'] || [inputs.python-version] }}
     container:
       image: rockylinux/rockylinux:8@sha256:f5529992e67440c1a4ae7788244d4381c6909159a88eacd95b7523ae47ced82e
     steps:
