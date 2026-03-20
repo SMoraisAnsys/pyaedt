@@ -241,7 +241,6 @@ jobs:
           target: 'all'
           use-python-cache: false
           whitelist-license-check: 'fpdf2'
-          install-python-with-uv: true
 
       - name: Import python package
         env:
@@ -304,7 +303,6 @@ jobs:
           target: 'all'
           use-python-cache: false
           whitelist-license-check: 'fpdf2'
-          install-python-with-uv: false
 
       - name: Import python package
         env:
