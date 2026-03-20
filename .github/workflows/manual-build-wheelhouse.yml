@@ -271,7 +271,7 @@ jobs:
           dnf -y update
           dnf groupinstall -y "Development Tools"
           dnf -y install \
-            gcc make bzip2-devel zlib-devel xz-devel \
+            gcc wget make bzip2-devel zlib-devel xz-devel \
             openssl-devel libffi-devel sqlite-devel \
             readline-devel libuuid-devel expat-devel \
             pkgconf-pkg-config ca-certificates
